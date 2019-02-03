@@ -5,5 +5,8 @@ This userscript requires [Tampermonkey](https://tampermonkey.net) extension to w
 
 ## Changelog
 
+### 1.0.0
+- Public @ https://openuserjs.org/scripts/moped/AliExpress_copy_short_url_button
+
 ### 0.1.0
 - initial release
