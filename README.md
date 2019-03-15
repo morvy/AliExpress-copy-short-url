@@ -6,7 +6,7 @@ This userscript requires [Tampermonkey](https://tampermonkey.net) extension to w
 ## Changelog
 
 ### 1.1.0
-- Copy action visual confirmation
+- Copy to clipboard action now has visual confirmation
   - turns green if copied to clipboard
   - turns red if unsuccessful
 
