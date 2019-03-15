@@ -112,9 +112,7 @@ document.querySelector('#j-product-action-block').insertAdjacentHTML('beforeend'
 
 document.querySelector('#copy-url').addEventListener('click', function(event) {
   var copied = copyTextToClipboard(tryShortUrl(document.location.href));
-
   if(copied) this.classList.add("copy-ok");
   else this.classList.add("copy-ko");
-
   return false;
 });
