@@ -2,11 +2,12 @@
 // @name         AliExpress copy short url button
 // @namespace    https://openuserjs.org/users/moped
 // @license      GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
-// @version      1.1.0
+// @version      1.1.1
 // @description  Adds a copy short url button to AliExpress item page. Copies a nice link instead of a long one.
 // @author       moped
 // @copyright    Mar 15, 2019, moped
 // @include      *://www.aliexpress.com/item/*
+// @include      *://www.aliexpress.com/store/product/*
 // @run-at       document-end
 // @icon         https://ae01.alicdn.com/images/eng/wholesale/icon/aliexpress.ico
 // @grant        none
