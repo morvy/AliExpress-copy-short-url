@@ -5,6 +5,9 @@ This userscript requires [Tampermonkey](https://tampermonkey.net) extension to w
 
 ## Changelog
 
+### 1.1.1
+- fixed URL include in description, was missing /store/product/
+
 ### 1.1.0
 - Copy to clipboard action now has visual confirmation
   - turns green if copied to clipboard
