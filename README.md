@@ -5,6 +5,11 @@ This userscript requires [Tampermonkey](https://tampermonkey.net) extension to w
 
 ## Changelog
 
+### 2.0.0
+- compatibility with latest changes on Aliexpress
+  - removed /store/product/ as everything is now redirected to /item/
+  - reusing GM functions for adding styles and working with clipboard
+
 ### 1.1.1
 - fixed URL include in description, was missing /store/product/
 
