@@ -5,6 +5,11 @@ This userscript requires [Tampermonkey](https://tampermonkey.net) extension to w
 
 ## Changelog
 
+### 2.1.0
+- improved detection of short url by parsing *amphtml* link from source code
+  - in some cases url in address bar includes full description which is causing long "short" urls
+  - if *amphtml* is not present, will use url from address bar
+  
 ### 2.0.0
 - compatibility with latest changes on Aliexpress
   - removed /store/product/ as everything is now redirected to /item/
