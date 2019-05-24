@@ -2,7 +2,7 @@
 // @name         AliExpress copy short url button
 // @namespace    https://openuserjs.org/users/moped
 // @license      GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
-// @version      2.1.0
+// @version      2.1.1
 // @description  Adds a copy short url button to AliExpress item page. Copies a nice link instead of a long one.
 // @author       moped
 // @copyright    Apr 29, 2019, moped
@@ -23,9 +23,9 @@ var copyButton = '<a rel="nofollow" href="javascript: void(0);" ' +
 				'</a>';
 
 function tryShortUrl() {
-    var amp = document.querySelector("link[rel='amphtml']").getAttribute("href");
+    var amp = document.querySelector("link[rel='amphtml']");
     if( amp !== null )
-        return amp.replace('m.','www.');
+        return amp.href.replace('m.','www.');
 
     var url = document.location.href;
 	return url.split("?")[0];
