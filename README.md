@@ -5,6 +5,9 @@ This userscript requires [Tampermonkey](https://tampermonkey.net) extension to w
 
 ## Changelog
 
+### 2.2.0
+- support old Aliexpress site layout as it seems like it still loads for some users
+
 ### 2.1.1
 - improved detection of short url by parsing *amphtml* link from source code
   - in some cases url in address bar includes full description which is causing long "short" urls
