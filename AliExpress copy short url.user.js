@@ -33,7 +33,7 @@ function tryShortUrl() {
 
 GM_addStyle('\
 .product-action > #copy-url { margin-top: 12px; margin-left: 10px; }\
-#copy-url { float: right; display: inline-block; height: 44px; line-height: 42px; border: 1px solid #e8e8e8; border-radius: 4px; transition: background-color .35s ease-in-out; }\
+#copy-url { display: inline-block; height: 44px; line-height: 42px; border: 1px solid #e8e8e8; border-radius: 4px; transition: background-color .35s ease-in-out; }\
 #copy-url > svg { margin: 10px; transition: fill .25s ease-in-out;}\
 .copy-ok { background-color: #99cc00; }\
 .copy-ok > svg, .copy-ko > svg { fill: white }\
