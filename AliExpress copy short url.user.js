@@ -2,7 +2,7 @@
 // @name         AliExpress copy short url button
 // @namespace    https://openuserjs.org/users/moped
 // @license      GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
-// @version      2.2.0
+// @version      2.2.1
 // @description  Adds a copy short url button to AliExpress item page. Copies a nice link instead of a long one.
 // @author       moped
 // @copyright    Apr 29, 2019, moped
@@ -33,6 +33,8 @@ function tryShortUrl() {
 
 GM_addStyle('\
 .product-action > #copy-url { margin-top: 12px; margin-left: 10px; }\
+#j-product-action-block > .product-action-main { display: inline-block; }\
+#j-product-action-block #copy-url { position: relative; vertical-align: bottom; margin-bottom: 5px; margin-left: 5px; }\
 #copy-url { display: inline-block; height: 44px; line-height: 42px; border: 1px solid #e8e8e8; border-radius: 4px; transition: background-color .35s ease-in-out; }\
 #copy-url > svg { margin: 10px; transition: fill .25s ease-in-out;}\
 .copy-ok { background-color: #99cc00; }\
@@ -40,7 +42,7 @@ GM_addStyle('\
 ');
 
 var wrapper = document.querySelector('.product-action'); // New Aliexpress
-if( wrapper === null ) wrapper = document.querySelector('.product-action-main'); // Old Aliexpress
+if( wrapper === null ) wrapper = document.querySelector('#j-product-action-block'); // Old Aliexpress
 if( wrapper !== null ) wrapper.insertAdjacentHTML('beforeend', copyButton);
 
 document.querySelector('#copy-url').addEventListener('click', function(event) {
