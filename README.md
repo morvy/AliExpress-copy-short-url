@@ -5,6 +5,11 @@ This userscript requires [Tampermonkey](https://tampermonkey.net) extension to w
 
 ## Changelog
 
+### 2.2.2
+- bringing back support for old Aliexpress site
+  - trigger scripts on /store/product
+  - using *alternate* instead of *amphtml* which is not present on old Ali
+
 ### 2.2.1
 - fix location of copy button for old Aliexpress site
 
